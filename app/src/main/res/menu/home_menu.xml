@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_menu_QR"
+        android:title="QR "
+        app:showAsAction="always"
+        android:icon="@drawable/icon_qr"
+        />
+
+    <item
+        android:id="@+id/home_menu_mic"
+        android:title="Mic "
+        app:showAsAction="always"
+        android:icon="@drawable/icon_mic"
+        />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/a"
+        android:title=""
+        android:icon="@drawable/icon_home_showmenu">
+        <menu>
+
+    <item
+    android:id="@+id/home_menu_MyProfile"
+    android:title="My Profile "
+    app:showAsAction="always"
+    android:icon="@drawable/icon_home_user"
+    />
+    <item
+        android:id="@+id/home_menu_Setting"
+        android:icon="@drawable/icon_home_setting"
+        app:showAsAction="never"
+        android:title="Setting "
+        />
+    <item
+        android:id="@+id/home_menu_ContactUs"
+        android:title="Contact Us "
+        app:showAsAction="never"
+        android:icon="@drawable/icon_home_contactus"
+        />
+    <item
+        android:id="@+id/home_menu_AboutUs"
+        android:title="About Us "
+        app:showAsAction="never"
+        android:icon="@drawable/icon_home_about_us"
+        />
+    <item
+        android:id="@+id/home_menu_LogOut"
+        android:title="Log Out "
+        app:showAsAction="never"
+        android:icon="@drawable/icon_home_logout"
+        />
+        </menu>
+    </item>
+</menu>

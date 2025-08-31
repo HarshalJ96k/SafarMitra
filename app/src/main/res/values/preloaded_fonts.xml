@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/aldrich</item>
+        <item>@font/alegreya</item>
+        <item>@font/alfa_slab_one</item>
+        <item>@font/amita</item>
+        <item>@font/autour_one</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/cambo</item>
+        <item>@font/cinzel_decorative</item>
+        <item>@font/elsie</item>
+        <item>@font/lato_bold</item>
+        <item>@font/loved_by_the_king</item>
+        <item>@font/montserrat_bold</item>
+        <item>@font/nunito_bold</item>
+        <item>@font/poppins_bold</item>
+        <item>@font/roboto_thin</item>
+        <item>@font/spirax</item>
+        <item>@font/warnes</item>
+    </array>
+</resources>

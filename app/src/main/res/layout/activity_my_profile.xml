@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact_Us"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="My Profile "
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        />
+
+        <ImageView
+            android:id="@+id/ivProfilePhoto"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/user_profile_photo" />
+        <!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="300dp"-->
+<!--        app:lottie_fileName="Profileanimation.json"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_loop="true"-->
+<!--        app:lottie_speed="1"-->
+<!--        />-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Profile Photo"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnUpdateProfilePhoto"
+            android:fontFamily="@font/spirax"
+            />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FCFDFF"
+        android:id="@+id/cvnewregister"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:layout_margin="15dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/etbgshape"
+            android:fontFamily="@font/spirax"
+            android:text="Name :- Harshal Keshav Jadhav "
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/tvname"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/etbgshape"
+            android:fontFamily="@font/spirax"
+            android:text="Email-Id :- harshalkj96@gmail.com"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/tvemail"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Phone Number :- 9021307634"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="15dp"
+            android:background="@drawable/etbgshape"
+            android:padding="5dp"
+            android:fontFamily="@font/spirax"
+            android:id="@+id/tvphone"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Username :- HarshalD@96"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="15dp"
+            android:background="@drawable/etbgshape"
+            android:padding="5dp"
+            android:fontFamily="@font/spirax"
+            android:id="@+id/tvusername"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Password"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="15dp"
+            android:background="@drawable/etbgshape"
+            android:padding="5dp"
+            android:fontFamily="@font/spirax"
+            android:id="@+id/tvpassword"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="City :- Chikhli"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="15dp"
+            android:background="@drawable/etbgshape"
+            android:padding="5dp"
+            android:fontFamily="@font/spirax"
+            android:id="@+id/tvcity"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/etbgshape"
+            android:fontFamily="@font/spirax"
+            android:text="Token"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            android:id="@+id/tvMyProfileToken"/>
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

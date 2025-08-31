@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permission for internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirstTask"
+        tools:targetApi="31">
+        <activity
+            android:name=".QRCode"
+            android:exported="false" 
+            android:theme="@style/showactionbar"
+            />
+        <activity
+            android:name=".MiniBusCarOwner3"
+            android:exported="false" />
+        <activity
+            android:name=".MiniBusCarOwner2"
+            android:exported="false" />
+        <activity
+            android:name=".SuvCarOwner3"
+            android:exported="false" />
+        <activity
+            android:name=".SuvCarOwner2"
+            android:exported="false" />
+        <activity
+            android:name=".SedanCarOwner3"
+            android:exported="false" />
+        <activity
+            android:name=".SedanCarOwner2"
+            android:exported="false" />
+        <activity
+            android:name=".MpvCarOwner3"
+            android:exported="false" />
+        <activity
+            android:name=".MpvCarOwner2"
+            android:exported="false" />
+        <activity
+            android:name=".MiniBusCarOwner1"
+            android:exported="false" />
+        <activity
+            android:name=".MpvCarOwner1"
+            android:exported="false" />
+        <activity
+            android:name=".SuvCarOwner1"
+            android:exported="false" />
+        <activity
+            android:name=".MicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SedanCarOwner1"
+            android:exported="false" />
+        <activity
+            android:name=".MiniBusCarMoreInformation"
+            android:exported="false" />
+        <activity
+            android:name=".MPVCarMoreInformation"
+            android:exported="false" />
+        <activity
+            android:name=".SedanCarMoreInformation"
+            android:exported="false" />
+        <activity
+            android:name=".DiscountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuvCarMoreInformation"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDXKrtmMVOvzYhO9YDMYIdILpIThd8WW3w" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MyLocationMapActivity"
+            android:exported="false"
+            android:label="@string/title_activity_my_location_map" />
+        <activity
+            android:name=".Logout"
+            android:exported="false" />
+        <activity
+            android:name=".About_US"
+            android:exported="false" />
+        <activity
+            android:name=".Contact_Us"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".My_profile"
+            android:exported="false" />
+        <activity
+            android:name=".NewUserRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:theme="@style/showactionbar" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

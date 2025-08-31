@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewUserRegistrationActivity"
+    android:background="#FFFFFF"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/font"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="SignUp.json"
+            app:lottie_loop="true"
+            app:lottie_speed="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Create New Account"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FCFDFF"
+        android:id="@+id/cvnewregister"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:layout_margin="15dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etnewuserFullname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/etbgshape"
+            android:fontFamily="@font/poppins_bold"
+            android:hint="Full Name "
+            android:inputType="textPersonName"
+            android:paddingLeft="6dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etnewuseremail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/etbgshape"
+            android:fontFamily="@font/poppins_bold"
+            android:hint=" Email-id "
+            android:inputType="textEmailAddress"
+            android:paddingLeft="6dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Phone number"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/etnewuserphoneno"
+            android:layout_margin="15dp"
+            android:background="@drawable/etbgshape"
+            android:paddingLeft="6dp"
+            android:inputType="number"
+            android:fontFamily="@font/poppins_bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Username"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/etnewuserusername"
+            android:layout_margin="15dp"
+            android:background="@drawable/etbgshape"
+            android:paddingLeft="6dp"
+            android:inputType="text"
+            android:fontFamily="@font/poppins_bold"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:fontFamily="@font/poppins_bold"
+            >
+
+            <EditText
+                android:id="@+id/etnewuserpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/etbgshape"
+                android:fontFamily="@font/poppins_bold"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="6dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <EditText
+            android:id="@+id/etnewusercity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/etbgshape"
+            android:fontFamily="@font/poppins_bold"
+            android:hint="City Name "
+            android:inputType="textPersonName"
+            android:paddingLeft="6dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnnewuserRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FF0303"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Register Now"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvnewuserSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/poppins_bold"
+            android:text="I am already a member. Sign In"
+            android:textColor="#F33131"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

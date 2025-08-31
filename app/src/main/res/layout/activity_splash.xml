@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FEFEFE"
+            tools:context=".SplashActivity"
+            >
+
+            <ImageView
+                android:id="@+id/ivmain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                android:src="@drawable/carlogoo"
+                />
+
+    <TextView
+        android:id="@+id/tvmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/company_name"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv2main"
+                android:text="@string/Anthem"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/cambo"
+                android:textColor="@color/grey"
+                />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        app:lottie_autoPlay="true"
+        app:lottie_speed="1"
+        app:lottie_loop="true"
+        android:scaleType="fitXY"
+        app:lottie_fileName="CarAnimation5.json"
+        android:visibility="visible"
+        android:id="@+id/lasplash"
+        />
+
+        </LinearLayout>

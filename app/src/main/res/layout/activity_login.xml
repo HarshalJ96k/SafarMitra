@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#FEFEFE"
+    >
+    
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/ivloginlogo"
+        android:src="@drawable/carlogoo"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cvlogin"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#6D9EA5"
+        app:cardElevation="16dp"
+        android:layout_margin="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya"
+                android:gravity="center"
+                android:text="@string/login_here"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/etloginusername"
+                android:hint="Username"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:inputType="text"
+                android:layout_margin="12dp"
+                android:padding="12dp"
+                android:background="@drawable/etbgshape"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/etloginpassword"
+                    android:hint="Password"
+                    android:textColorHint="@color/grey"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:inputType="textPassword"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/etbgshape"
+                    android:padding="4dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnlogin"
+                android:layout_gravity="center"
+                android:text="Login"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="12dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/tvregisternewuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#6D9DA4"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/new_user_click_here"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
